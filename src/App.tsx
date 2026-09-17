@@ -838,59 +838,162 @@ function App() {
 </section>
 
 {/* Shop Section */}
+{/* Shop Section */}
 <section
   id="shop"
   className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
-  <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" />
+  {/* Background */}
+  <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px]" />
 
   <div className="relative z-10 w-full max-w-6xl mx-auto">
-    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
-      04 / Shop
-    </p>
 
-    <div className="grid items-end gap-10 md:grid-cols-2">
-      <div>
-        <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium text-white">
-          Things worth using.
-        </h2>
+    {/* Header */}
+    <div className="mb-14">
+      <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
+        04 / Shop
+      </p>
 
-        <p className="mt-6 max-w-xl text-lg sm:text-xl leading-relaxed text-white/70">
-          Digital tools, experimental products and resources made by
-          Mainframe.
-        </p>
-      </div>
+      <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium text-white">
+        Things we make.
+      </h2>
 
-      <div className="rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
-        <div className="flex items-start justify-between">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Coming soon
-            </p>
+      <p className="mt-6 max-w-2xl text-lg sm:text-xl leading-relaxed text-white/70">
+        Digital products, creative tools and experimental objects built by
+        the Mainframe team. Explore what we're making and get in touch if
+        something catches your eye.
+      </p>
+    </div>
 
-            <h3 className="mt-4 text-3xl text-white">
-              Mainframe Objects
-            </h3>
+    {/* Product Cards */}
+    <div className="grid gap-5 md:grid-cols-3">
+
+      {/* Product 1 */}
+      <a
+        href="mailto:hello@mainframe.co?subject=AI%20Toolkit%20Enquiry"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+      >
+        <div className="mb-10 flex items-center justify-between">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
+            ✦
           </div>
 
-          <span className="rounded-full border border-white/20 px-4 py-2 text-sm text-white/60">
-            2026
+          <span className="text-sm text-white/40">
+            Digital
           </span>
         </div>
 
-        <p className="mt-6 text-white/60">
-          A collection of useful digital products, creative tools and
-          experiments.
+        <h3 className="text-3xl text-white">
+          AI Toolkit
+        </h3>
+
+        <p className="mt-4 text-white/60">
+          A collection of practical AI tools and workflows designed to make
+          creative and everyday work faster.
         </p>
 
-        <a
-          href="mailto:hello@mainframe.co?subject=Mainframe Shop"
-          className="mt-8 inline-flex rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
-        >
-          Ask about the shop →
-        </a>
-      </div>
+        <div className="mt-8 flex items-center justify-between text-sm">
+          <span className="text-white/50">
+            Enquire
+          </span>
+
+          <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+            →
+          </span>
+        </div>
+      </a>
+
+      {/* Product 2 */}
+      <a
+        href="mailto:hello@mainframe.co?subject=Website%20Template%20Enquiry"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+      >
+        <div className="mb-10 flex items-center justify-between">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
+            ◇
+          </div>
+
+          <span className="text-sm text-white/40">
+            Template
+          </span>
+        </div>
+
+        <h3 className="text-3xl text-white">
+          Web Templates
+        </h3>
+
+        <p className="mt-4 text-white/60">
+          Carefully designed website foundations for creators, startups and
+          ambitious digital projects.
+        </p>
+
+        <div className="mt-8 flex items-center justify-between text-sm">
+          <span className="text-white/50">
+            Enquire
+          </span>
+
+          <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+            →
+          </span>
+        </div>
+      </a>
+
+      {/* Product 3 */}
+      <a
+        href="mailto:hello@mainframe.co?subject=Creative%20Tools%20Enquiry"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+      >
+        <div className="mb-10 flex items-center justify-between">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
+            ○
+          </div>
+
+          <span className="text-sm text-white/40">
+            Tools
+          </span>
+        </div>
+
+        <h3 className="text-3xl text-white">
+          Creative Tools
+        </h3>
+
+        <p className="mt-4 text-white/60">
+          Experimental tools and small digital utilities created to explore
+          new ideas and better ways of working.
+        </p>
+
+        <div className="mt-8 flex items-center justify-between text-sm">
+          <span className="text-white/50">
+            Enquire
+          </span>
+
+          <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+            →
+          </span>
+        </div>
+      </a>
+
     </div>
+
+    {/* Shop CTA */}
+    <div className="mt-12 flex flex-wrap gap-4">
+
+      <a
+        href="mailto:hello@mainframe.co?subject=Mainframe%20Shop%20Enquiry"
+        className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-lg font-medium text-black transition-all duration-300 hover:scale-105"
+      >
+        Ask about a product →
+      </a>
+
+      <a
+        href="#contact"
+        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+      >
+        Contact Mainframe →
+      </a>
+
+    </div>
+
   </div>
 </section>
     </main>
