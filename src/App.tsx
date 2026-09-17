@@ -428,10 +428,13 @@ function App() {
   id="labs"
   className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
+  {/* Background */}
   <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
 
   <div className="relative z-10 w-full max-w-6xl mx-auto">
-    <div className="mb-10">
+
+    {/* Section Header */}
+    <div className="mb-12">
       <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
         01 / Labs
       </p>
@@ -447,163 +450,390 @@ function App() {
       </p>
     </div>
 
+    {/* Lab Cards */}
     <div className="grid gap-5 md:grid-cols-3">
-      <div className="rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-300 hover:bg-white/20 hover:-translate-y-1">
-        <div className="mb-6 text-3xl">✦</div>
-        <h3 className="text-2xl text-white">AI Systems</h3>
-        <p className="mt-3 text-white/60">
-          Intelligent interfaces, agents and automation systems designed to
-          solve practical problems.
-        </p>
-      </div>
 
-      <div className="rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-300 hover:bg-white/20 hover:-translate-y-1">
-        <div className="mb-6 text-3xl">⌁</div>
-        <h3 className="text-2xl text-white">Experiments</h3>
+      {/* AI Systems */}
+      <a
+        href="#studio"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-2 hover:border-white/40"
+      >
+        <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
+          ✦
+        </div>
+
+        <h3 className="text-2xl text-white">
+          AI Systems
+        </h3>
+
+        <p className="mt-3 text-white/60">
+          Intelligent interfaces, AI agents and automation systems designed
+          to solve practical problems.
+        </p>
+
+        <div className="mt-8 text-sm text-white/50 transition-all duration-300 group-hover:text-white">
+          Explore → 
+        </div>
+      </a>
+
+      {/* Experiments */}
+      <a
+        href="#studio"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-2 hover:border-white/40"
+      >
+        <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
+          ◇
+        </div>
+
+        <h3 className="text-2xl text-white">
+          Experiments
+        </h3>
+
         <p className="mt-3 text-white/60">
           Rapid prototypes exploring new interactions, ideas and emerging
           technologies.
         </p>
-      </div>
 
-      <div className="rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-300 hover:bg-white/20 hover:-translate-y-1">
-        <div className="mb-6 text-3xl">◉</div>
-        <h3 className="text-2xl text-white">Future Tech</h3>
+        <div className="mt-8 text-sm text-white/50 transition-all duration-300 group-hover:text-white">
+          Explore →
+        </div>
+      </a>
+
+      {/* Future Tech */}
+      <a
+        href="#openings"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-2 hover:border-white/40"
+      >
+        <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
+          ○
+        </div>
+
+        <h3 className="text-2xl text-white">
+          Future Tech
+        </h3>
+
         <p className="mt-3 text-white/60">
           Exploring what comes next across AI, software, automation and
           connected experiences.
         </p>
-      </div>
+
+        <div className="mt-8 text-sm text-white/50 transition-all duration-300 group-hover:text-white">
+          Explore →
+        </div>
+      </a>
+
     </div>
+
+    {/* Labs CTA */}
+    <div className="mt-10">
+      <a
+        href="#studio"
+        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+      >
+        Explore the Lab →
+      </a>
+    </div>
+
   </div>
 </section>
 
+{/* Studio Section */}
 {/* Studio Section */}
 <section
   id="studio"
   className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
-  <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" />
+  {/* Background */}
+  <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px]" />
 
   <div className="relative z-10 w-full max-w-6xl mx-auto">
-    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
+
+    {/* Section Label */}
+    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-white/60">
       02 / Studio
     </p>
 
-    <div className="grid items-center gap-12 md:grid-cols-2">
+    {/* Main Content */}
+    <div className="grid gap-12 md:grid-cols-2 md:items-end">
+
+      {/* Left */}
       <div>
         <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium text-white">
           We create.
         </h2>
 
         <p className="mt-6 max-w-xl text-lg sm:text-xl leading-relaxed text-white/70">
-          From websites and interfaces to digital products, the Studio turns
-          ideas into experiences that feel simple, distinctive and alive.
+          From websites and interfaces to intelligent digital products,
+          the Studio turns ideas into experiences that feel simple,
+          distinctive and alive.
         </p>
 
-        <button
-          type="button"
-          className="mt-8 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+        <a
+          href="#openings"
+          className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1"
         >
           Explore our work →
-        </button>
+        </a>
       </div>
 
-      <div className="rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
-        <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-          What we build
-        </p>
+      {/* Right */}
+      <div className="grid gap-4">
 
-        <div className="mt-8 space-y-5 text-2xl text-white">
-          <div className="border-b border-white/10 pb-5">
-            Web Experiences
+        <a
+          href="#openings"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+        >
+          <div className="flex items-center justify-between">
+            <h3 className="text-2xl text-white">
+              Web Experiences
+            </h3>
+
+            <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
           </div>
-          <div className="border-b border-white/10 pb-5">
-            AI Products
+
+          <p className="mt-3 text-white/60">
+            Modern websites, responsive interfaces and digital experiences
+            built for the web.
+          </p>
+        </a>
+
+        <a
+          href="#openings"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+        >
+          <div className="flex items-center justify-between">
+            <h3 className="text-2xl text-white">
+              AI Products
+            </h3>
+
+            <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
           </div>
-          <div className="border-b border-white/10 pb-5">
-            Interactive Interfaces
+
+          <p className="mt-3 text-white/60">
+            AI-powered tools, intelligent agents and automation systems
+            designed around real problems.
+          </p>
+        </a>
+
+        <a
+          href="#openings"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+        >
+          <div className="flex items-center justify-between">
+            <h3 className="text-2xl text-white">
+              Interactive Interfaces
+            </h3>
+
+            <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
           </div>
-          <div>
-            Digital Experiences
+
+          <p className="mt-3 text-white/60">
+            Thoughtful interactions, animations and interfaces that make
+            digital products feel alive.
+          </p>
+        </a>
+
+        <a
+          href="#openings"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+        >
+          <div className="flex items-center justify-between">
+            <h3 className="text-2xl text-white">
+              Digital Experiences
+            </h3>
+
+            <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
           </div>
-        </div>
+
+          <p className="mt-3 text-white/60">
+            Creative digital experiences combining design, technology and
+            storytelling.
+          </p>
+        </a>
+
       </div>
     </div>
+
+    {/* Studio CTA */}
+    <div className="mt-12 flex flex-wrap gap-4">
+
+      <a
+        href="#openings"
+        className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+      >
+        Start a project →
+      </a>
+
+      <a
+        href="mailto:hello@mainframe.co"
+        className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+      >
+        Talk to us →
+      </a>
+
+    </div>
+
   </div>
 </section>
 
+{/* Openings Section */}
 {/* Openings Section */}
 <section
   id="openings"
   className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
+  {/* Background */}
   <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
 
   <div className="relative z-10 w-full max-w-6xl mx-auto">
-    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
-      03 / Openings
-    </p>
 
-    <div className="grid gap-10 md:grid-cols-2">
-      <div>
-        <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium text-white">
-          Come build.
-        </h2>
+    {/* Header */}
+    <div className="mb-14">
+      <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
+        03 / Openings
+      </p>
 
-        <p className="mt-6 max-w-xl text-lg sm:text-xl leading-relaxed text-white/70">
-          We're interested in curious people who enjoy building things,
-          questioning assumptions and learning by doing.
-        </p>
+      <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium text-white">
+        Come build.
+      </h2>
+
+      <p className="mt-6 max-w-2xl text-lg sm:text-xl leading-relaxed text-white/70">
+        We're looking for curious people who enjoy solving meaningful
+        problems, experimenting with technology and building products
+        that people genuinely love to use.
+      </p>
+    </div>
+
+    {/* Open Positions */}
+    <div className="grid gap-5">
+
+      {/* Position 1 */}
+      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+
+          <div>
+            <div className="mb-3 flex items-center gap-3 text-sm text-white/50">
+              <span>Engineering</span>
+              <span>•</span>
+              <span>Full Time</span>
+            </div>
+
+            <h3 className="text-3xl text-white">
+              Frontend Developer
+            </h3>
+
+            <p className="mt-3 max-w-2xl text-white/60">
+              Build beautiful responsive interfaces using modern frontend
+              technologies and collaborate on creative digital products.
+            </p>
+          </div>
+
+          <a
+            href="mailto:hello@mainframe.co?subject=Application - Frontend Developer"
+            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+          >
+            Apply →
+          </a>
+
+        </div>
       </div>
 
-      <div className="space-y-4">
-        <a
-          href="mailto:hello@mainframe.co?subject=Frontend Developer"
-          className="group flex items-center justify-between rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
-        >
+      {/* Position 2 */}
+      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+
           <div>
-            <h3 className="text-2xl">Frontend Developer</h3>
-            <p className="mt-1 text-sm opacity-60">
-              React · TypeScript · UI
+            <div className="mb-3 flex items-center gap-3 text-sm text-white/50">
+              <span>Artificial Intelligence</span>
+              <span>•</span>
+              <span>Full Time</span>
+            </div>
+
+            <h3 className="text-3xl text-white">
+              AI Engineer
+            </h3>
+
+            <p className="mt-3 max-w-2xl text-white/60">
+              Design intelligent agents, automation workflows and practical
+              AI systems that solve real-world problems.
             </p>
           </div>
-          <span className="text-2xl transition-transform group-hover:translate-x-1">
-            →
-          </span>
-        </a>
+
+          <a
+            href="mailto:hello@mainframe.co?subject=Application - AI Engineer"
+            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+          >
+            Apply →
+          </a>
+
+        </div>
+      </div>
+
+      {/* Position 3 */}
+      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+
+          <div>
+            <div className="mb-3 flex items-center gap-3 text-sm text-white/50">
+              <span>Design</span>
+              <span>•</span>
+              <span>Internship</span>
+            </div>
+
+            <h3 className="text-3xl text-white">
+              Product Designer
+            </h3>
+
+            <p className="mt-3 max-w-2xl text-white/60">
+              Create thoughtful user experiences, modern interfaces and
+              visual systems that bring ambitious ideas to life.
+            </p>
+          </div>
+
+          <a
+            href="mailto:hello@mainframe.co?subject=Application - Product Designer"
+            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+          >
+            Apply →
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-12 rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+        <div>
+          <h3 className="text-2xl text-white">
+            Don't see your role?
+          </h3>
+
+          <p className="mt-2 text-white/60">
+            We're always excited to meet talented people with great ideas.
+          </p>
+        </div>
 
         <a
-          href="mailto:hello@mainframe.co?subject=AI Engineer"
-          className="group flex items-center justify-between rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+          href="mailto:hello@mainframe.co?subject=Open Application"
+          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105"
         >
-          <div>
-            <h3 className="text-2xl">AI Engineer</h3>
-            <p className="mt-1 text-sm opacity-60">
-              AI · Automation · Python
-            </p>
-          </div>
-          <span className="text-2xl transition-transform group-hover:translate-x-1">
-            →
-          </span>
+          Send your profile →
         </a>
 
-        <a
-          href="mailto:hello@mainframe.co?subject=Creative Technologist"
-          className="group flex items-center justify-between rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
-        >
-          <div>
-            <h3 className="text-2xl">Creative Technologist</h3>
-            <p className="mt-1 text-sm opacity-60">
-              Design · Code · Experiments
-            </p>
-          </div>
-          <span className="text-2xl transition-transform group-hover:translate-x-1">
-            →
-          </span>
-        </a>
       </div>
     </div>
+
   </div>
 </section>
 
