@@ -44,7 +44,7 @@ function App() {
 
   const [menuOpen, setMenuOpen] = useState(false)
     const typewriterText =
-    "Glad you stopped in. Good taste tends to find us. Now, what are we building?"
+  "We design, build and experiment. Ideas become digital experiences here."
 
   const { displayed, done } = useTypewriter(typewriterText)
     const [showActions, setShowActions] = useState(false)
@@ -56,7 +56,7 @@ function App() {
 
   const handleCopyEmail = async () => {
   try {
-    await navigator.clipboard.writeText('hello@mainframe.co')
+    await navigator.clipboard.writeText('hello@anudeepstudio.co')
   } catch (error) {
     console.error('Failed to copy email:', error)
   }
@@ -160,21 +160,32 @@ function App() {
       <nav className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
         
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <span
-            className="text-[21px] tracking-tight text-white sm:text-[26px]"
-            style={{ fontFamily: 'var(--font-heading)' }}
-          >
-            Mainframe®
-          </span>
+<div className="flex items-center gap-3">
 
-          <span
-            className="select-none text-[25px] text-white sm:text-[30px]"
-            style={{ letterSpacing: '-0.02em' }}
-          >
-            ✳︎
-          </span>
-        </div>
+  {/* SA Logo */}
+  <div className="flex h-16 w-16 items-center justify-center sm:h-16 sm:w-16">
+    <img
+      src="/logo.png"
+      alt="S&A Studio"
+      className="h-full w-full object-contain mix-blend-screen transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+
+  {/* Brand Name */}
+  <div className="flex flex-col leading-none">
+    <span
+      className="text-[24px] font-medium tracking-tight text-white sm:text-[27px]"
+      style={{ fontFamily: 'var(--font-heading)' }}
+    >
+      S&A
+    </span>
+
+    <span className="mt-1 text-[8px] tracking-[0.28em] text-white/60 sm:text-[9px]">
+      STUDIO
+    </span>
+  </div>
+
+</div>
 
         {/* Desktop Navigation */}
    {/* Desktop Navigation */}
@@ -212,11 +223,11 @@ function App() {
 
         {/* Desktop CTA */}
         <a
-          href="mailto:hello@mainframe.co"
-          className="hidden text-[23px] text-white underline underline-offset-2 transition-opacity hover:opacity-60 md:block"
-        >
-          Get in touch
-        </a>
+  href="#contact"
+  className="hidden rounded-full border border-white/40 bg-white/10 px-6 py-3 text-[18px] font-medium text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:border-white md:block"
+>
+  Get in touch →
+</a>
 
         {/* Mobile Hamburger */}
         <button
@@ -308,7 +319,7 @@ function App() {
 
     {/* Get in touch */}
     <a
-      href="mailto:hello@mainframe.co"
+      href="mailto:hello@anudeepstudio.co"
       onClick={() => setMenuOpen(false)}
       className="mt-4 w-full rounded-full border border-white/50 bg-white/15
         px-8 py-5 text-center text-[28px] font-medium text-white
@@ -374,29 +385,57 @@ function App() {
       : 'opacity-0 translate-y-4'
   }`}
 >
-  <button className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full text-[13px] sm:text-[15px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap hover:bg-black hover:text-white transition-colors duration-200">
-    Pitch us an idea
+  <button 
+  onClick={() =>
+    document.getElementById('contact')?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full text-[18px] sm:text-[18px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap hover:bg-black hover:text-white transition-colors duration-200">
+   
+    Start a project →
   </button>
 
-  <button className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full text-[13px] sm:text-[15px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap hover:bg-black hover:text-white transition-colors duration-200">
-    Come work here
-  </button>
+  <button
+  onClick={() =>
+    document.getElementById('studio')?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white"
+>
+  Work with us →
+</button>
 
-  <button className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full text-[13px] sm:text-[15px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap hover:bg-black hover:text-white transition-colors duration-200">
-    Send a brief hello
-  </button>
+  <button
+  onClick={() =>
+    document.getElementById('openings')?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white"
+>
+  Join the team →
+</button>
 
-  <button className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full text-[13px] sm:text-[15px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap hover:bg-black hover:text-white transition-colors duration-200">
-    See how we operate
-  </button>
+  <button
+  onClick={() =>
+    document.getElementById('studio')?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white"
+>
+  Explore S&A Studio →
+</button>
+
   <button
   onClick={handleCopyEmail}
-  className="inline-flex items-center justify-center gap-2 sm:gap-3 px-5 py-3 rounded-full border border-white bg-transparent text-white hover:bg-white hover:text-black transition-colors duration-200"
->
+  className="inline-flex items-center justify-center gap-2 sm:gap-3 px-5 py-3 rounded-full border border-white bg-transparent text-white transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white">
   <span>
     Reach us:{' '}
     <span className="underline underline-offset-1">
-      hello@mainframe.co
+      hello@anudeepstudio.co
     </span>
   </span>
 
@@ -673,7 +712,7 @@ function App() {
       </a>
 
       <a
-        href="mailto:hello@mainframe.co"
+        href="mailto:hello@anudeepstudio.co"
         className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
       >
         Talk to us →
@@ -737,7 +776,7 @@ function App() {
           </div>
 
           <a
-            href="mailto:hello@mainframe.co?subject=Application - Frontend Developer"
+            href="mailto:hello@anudeepstudio.co?subject=Application - Frontend Developer"
             className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
           >
             Apply →
@@ -768,7 +807,7 @@ function App() {
           </div>
 
           <a
-            href="mailto:hello@mainframe.co?subject=Application - AI Engineer"
+            href="mailto:hello@anudeepstudio.co?subject=Application - AI Engineer"
             className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
           >
             Apply →
@@ -799,7 +838,7 @@ function App() {
           </div>
 
           <a
-            href="mailto:hello@mainframe.co?subject=Application - Product Designer"
+            href="mailto:hello@anudeepstudio.co?subject=Application - Product Designer"
             className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
           >
             Apply →
@@ -825,7 +864,7 @@ function App() {
         </div>
 
         <a
-          href="mailto:hello@mainframe.co?subject=Open Application"
+          href="mailto:hello@anudeepstudio.co?subject=Open Application"
           className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105"
         >
           Send your profile →
@@ -837,8 +876,7 @@ function App() {
   </div>
 </section>
 
-{/* Shop Section */}
-{/* Shop Section */}
+{/* Shop Section */}                                              
 <section
   id="shop"
   className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
@@ -854,13 +892,13 @@ function App() {
         04 / Shop
       </p>
 
-      <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium text-white">
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-medium text-white">
         Things we make.
       </h2>
 
       <p className="mt-6 max-w-2xl text-lg sm:text-xl leading-relaxed text-white/70">
         Digital products, creative tools and experimental objects built by
-        the Mainframe team. Explore what we're making and get in touch if
+        the S&A Studio team. Explore what we're making and get in touch if
         something catches your eye.
       </p>
     </div>
@@ -870,7 +908,7 @@ function App() {
 
       {/* Product 1 */}
       <a
-        href="mailto:hello@mainframe.co?subject=AI%20Toolkit%20Enquiry"
+        href="mailto:hello@anudeepstudio.co?subject=AI%20Systems%20Enquiry"
         className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
@@ -884,7 +922,7 @@ function App() {
         </div>
 
         <h3 className="text-3xl text-white">
-          AI Toolkit
+          AI Systems
         </h3>
 
         <p className="mt-4 text-white/60">
@@ -905,7 +943,7 @@ function App() {
 
       {/* Product 2 */}
       <a
-        href="mailto:hello@mainframe.co?subject=Website%20Template%20Enquiry"
+        href="mailto:hello@anudeepstudio.co?subject=Website%20Experience%20Enquiry"
         className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
@@ -914,12 +952,12 @@ function App() {
           </div>
 
           <span className="text-sm text-white/40">
-            Template
+            Experience
           </span>
         </div>
 
         <h3 className="text-3xl text-white">
-          Web Templates
+          Web Experiences
         </h3>
 
         <p className="mt-4 text-white/60">
@@ -940,8 +978,8 @@ function App() {
 
       {/* Product 3 */}
       <a
-        href="mailto:hello@mainframe.co?subject=Creative%20Tools%20Enquiry"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+        href="mailto:hello@anudeepstudio.co?subject=Creative%20Tools%20Enquiry"
+        className="ggroup rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
@@ -979,7 +1017,7 @@ function App() {
     <div className="mt-12 flex flex-wrap gap-4">
 
       <a
-        href="mailto:hello@mainframe.co?subject=Mainframe%20Shop%20Enquiry"
+        href="mailto:hello@anudeepstudio.co?subject=S%A%20Studio%20Shop%20Enquiry"
         className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-lg font-medium text-black transition-all duration-300 hover:scale-105"
       >
         Ask about a product →
@@ -989,14 +1027,118 @@ function App() {
         href="#contact"
         className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
       >
-        Contact Mainframe →
+        Contact S&A Studio →
       </a>
 
     </div>
 
   </div>
 </section>
-    </main>
+
+{/* Contact Section */}
+<section
+  id="contact"
+  className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
+>
+  {/* Background */}
+  <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px]" />
+
+  <div className="relative z-10 w-full max-w-6xl mx-auto">
+
+    {/* Header */}
+    <div className="mb-14">
+      <p className="mb-3 text-sm uppercase tracking-[0.3em] text-white/60">
+        05 / Contact
+      </p>
+
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-medium text-white">
+        Let's make something.
+      </h2>
+
+      <p className="mt-6 max-w-2xl text-lg sm:text-xl leading-relaxed text-white/70">
+        Have an idea, a project or simply something interesting you'd like
+        to discuss? Tell us what you're thinking. We'd love to hear from you.
+      </p>
+    </div>
+
+    {/* Contact Cards */}
+    <div className="grid gap-5 md:grid-cols-2">
+
+      {/* Email */}
+      <a
+        href="mailto:hello@anudeepstudio.co?subject=Project%20Enquiry"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+      >
+        <div className="flex items-start justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
+              Email
+            </p>
+
+            <h3 className="mt-4 text-2xl sm:text-3xl text-white">
+              hello@anudeepstudio.co
+            </h3>
+
+            <p className="mt-3 text-white/60">
+              Tell us about your idea, project or collaboration.
+            </p>
+          </div>
+
+          <span className="text-xl text-white/40 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+            →
+          </span>
+        </div>
+      </a>
+
+      {/* Start a Project */}
+      <a
+        href="mailto:hello@anudeepstudio.co?subject=Start%20a%20Project"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+      >
+        <div className="flex items-start justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
+              New project
+            </p>
+
+            <h3 className="mt-4 text-2xl sm:text-3xl text-white">
+              Start a project
+            </h3>
+
+            <p className="mt-3 text-white/60">
+              Let's turn an ambitious idea into something real.
+            </p>
+          </div>
+
+          <span className="text-xl text-white/40 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+            →
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+    {/* Main CTA */}
+    <div className="mt-10">
+      <a
+        href="mailto:hello@anudeepstudio.co?subject=Hello%20S%26A%20Studio"
+        className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-medium text-black transition-all duration-300 hover:scale-105"
+      >
+        Say hello →
+      </a>
+    </div>
+
+    {/* Footer */}
+<div className="mt-24 border-t border-white/10 pt-6 text-center text-sm text-white/50">
+  <p>
+    © 2026 Anupama Roy. All Rights Reserved.
+  </p>
+</div>
+
+  </div>
+</section>
+
+</main>
   )
 }
 
