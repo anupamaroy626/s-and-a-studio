@@ -157,7 +157,7 @@ function App() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-black text-white">
             {/* Navbar */}
-      <nav className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
+      <nav className="fixed inset-x-0 top-0 z-60 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
         
         {/* Logo */}
 <div className="flex items-center gap-3">
@@ -235,7 +235,7 @@ function App() {
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
-          className="flex flex-col gap-[5px] md:hidden"
+          className="relative z-[60] flex flex-col gap-[5px] md:hidden"
         >
           <span
             className={`h-[2px] w-6 bg-white transition-transform duration-300 ${
@@ -258,7 +258,7 @@ function App() {
       </nav>
             {/* Mobile Navigation Overlay */}
 <div
-  className={`fixed inset-0 z-[9] flex flex-col items-center justify-center px-8
+  className={`fixed inset-0 z-[50] flex flex-col items-center justify-center px-8
     bg-black/50 backdrop-blur-xl transition-all duration-500
     ${
       menuOpen
@@ -348,8 +348,8 @@ function App() {
       </video>
 
             {/* Hero Section */}
-      <section className="relative z-[1] flex h-screen items-end justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
-        <div className="relative z-10 max-w-xl mr-auto ml-[8vw] mb-[12vh]">
+      <section className="relative z-[1] flex h-screen items-center justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
+        <div className="relative z-10 max-w-xl mr-auto ml-[8vw] mb-[5vh] md:mb-[12vh]-translate-y-[8vh] md:translate-y-0">
 
           {/* Blurred A.R.I.A. Introduction */}
           
