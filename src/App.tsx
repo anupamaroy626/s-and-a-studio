@@ -157,7 +157,7 @@ function App() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-black text-white">
             {/* Navbar */}
-      <nav className="fixed inset-x-0 top-0 z-60 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
+      <nav className="fixed inset-x-0 top-0 z-[60] flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5 bg-black/20 backdrop-blur-xl border-b border-white/10">
         
         {/* Logo */}
 <div className="flex items-center gap-3">
@@ -495,7 +495,7 @@ function App() {
       {/* AI Systems */}
       <a
         href="#studio"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-2 hover:border-white/40"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-x2 hover:border-white/40"
       >
         <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
           ✦
@@ -609,7 +609,7 @@ function App() {
 
         <a
           href="#openings"
-          className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1"
+          className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
         >
           Explore our work →
         </a>
@@ -620,7 +620,7 @@ function App() {
 
         <a
           href="#openings"
-          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2"
         >
           <div className="flex items-center justify-between">
             <h3 className="text-2xl text-white">
@@ -640,7 +640,7 @@ function App() {
 
         <a
           href="#openings"
-          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2"
         >
           <div className="flex items-center justify-between">
             <h3 className="text-2xl text-white">
@@ -660,7 +660,7 @@ function App() {
 
         <a
           href="#openings"
-          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2"
         >
           <div className="flex items-center justify-between">
             <h3 className="text-2xl text-white">
@@ -680,7 +680,7 @@ function App() {
 
         <a
           href="#openings"
-          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1"
+          className="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2"
         >
           <div className="flex items-center justify-between">
             <h3 className="text-2xl text-white">
@@ -706,14 +706,14 @@ function App() {
 
       <a
         href="#openings"
-        className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+        className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
       >
         Start a project →
       </a>
 
       <a
         href="mailto:hello@anudeepstudio.co"
-        className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+        className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
       >
         Talk to us →
       </a>
@@ -755,7 +755,7 @@ function App() {
     <div className="grid gap-5">
 
       {/* Position 1 */}
-      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1">
+      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 
           <div>
@@ -777,7 +777,7 @@ function App() {
 
           <a
             href="mailto:hello@anudeepstudio.co?subject=Application - Frontend Developer"
-            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
           >
             Apply →
           </a>
@@ -786,7 +786,7 @@ function App() {
       </div>
 
       {/* Position 2 */}
-      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1">
+      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 
           <div>
@@ -808,7 +808,7 @@ function App() {
 
           <a
             href="mailto:hello@anudeepstudio.co?subject=Application - AI Engineer"
-            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
           >
             Apply →
           </a>
@@ -817,7 +817,7 @@ function App() {
       </div>
 
       {/* Position 3 */}
-      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-1">
+      <div className="group rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:translate-x-2">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 
           <div>
@@ -839,7 +839,7 @@ function App() {
 
           <a
             href="mailto:hello@anudeepstudio.co?subject=Application - Product Designer"
-            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+            className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
           >
             Apply →
           </a>
@@ -865,7 +865,7 @@ function App() {
 
         <a
           href="mailto:hello@anudeepstudio.co?subject=Open Application"
-          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105"
+          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105 hover:translate-x-2"
         >
           Send your profile →
         </a>
@@ -909,7 +909,7 @@ function App() {
       {/* Product 1 */}
       <a
         href="mailto:hello@anudeepstudio.co?subject=AI%20Systems%20Enquiry"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
@@ -944,7 +944,7 @@ function App() {
       {/* Product 2 */}
       <a
         href="mailto:hello@anudeepstudio.co?subject=Website%20Experience%20Enquiry"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
@@ -970,7 +970,7 @@ function App() {
             Enquire
           </span>
 
-          <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+          <span className="text-white/50 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white ">
             →
           </span>
         </div>
@@ -979,7 +979,7 @@ function App() {
       {/* Product 3 */}
       <a
         href="mailto:hello@anudeepstudio.co?subject=Creative%20Tools%20Enquiry"
-        className="ggroup rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+        className="ggroup rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
@@ -1067,7 +1067,7 @@ function App() {
       {/* Email */}
       <a
         href="mailto:hello@anudeepstudio.co?subject=Project%20Enquiry"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="flex items-start justify-between">
           <div>
@@ -1093,7 +1093,7 @@ function App() {
       {/* Start a Project */}
       <a
         href="mailto:hello@anudeepstudio.co?subject=Start%20a%20Project"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-white/40 hover:bg-white/20"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="flex items-start justify-between">
           <div>
