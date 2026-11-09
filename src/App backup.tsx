@@ -224,30 +224,30 @@ function App() {
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
-          className="flex flex-col gap-[5px] md:hidden"
+          className="flex flex-col gap-1.25 md:hidden"
         >
           <span
-            className={`h-[2px] w-6 bg-white transition-transform duration-300 ${
-              menuOpen ? 'translate-y-[7px] rotate-45' : ''
+            className={`h-0.5 w-6 bg-white transition-transform duration-300 ${
+              menuOpen ? 'translate-y-1.75 rotate-45' : ''
             }`}
           />
 
           <span
-            className={`h-[2px] w-6 bg-white transition-opacity duration-300 ${
+            className={`h-0.5 w-6 bg-white transition-opacity duration-300 ${
               menuOpen ? 'opacity-0' : 'opacity-100'
             }`}
           />
 
           <span
-            className={`h-[2px] w-6 bg-white transition-transform duration-300 ${
-              menuOpen ? '-translate-y-[7px] -rotate-45' : ''
+            className={`h-0.5 w-6 bg-white transition-transform duration-300 ${
+              menuOpen ? '-translate-y-1.75 -rotate-45' : ''
             }`}
           />
         </button>
       </nav>
             {/* Mobile Navigation Overlay */}
 <div
-  className={`fixed inset-0 z-[9] flex flex-col items-center justify-center px-8
+  className={`fixed inset-0 z-9 flex flex-col items-center justify-center px-8
     bg-black/50 backdrop-blur-xl transition-all duration-500
     ${
       menuOpen
@@ -337,7 +337,7 @@ function App() {
       </video>
 
             {/* Hero Section */}
-      <section className="relative z-[1] flex h-screen items-end justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
+      <section className="relative z-1 flex h-screen items-end justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
         <div className="relative z-10 max-w-xl mr-auto ml-[8vw] mb-[12vh]">
 
           {/* Blurred A.R.I.A. Introduction */}
@@ -358,7 +358,7 @@ function App() {
 
             {!done && (
               <span
-                className="ml-[2px] inline-block h-[1.1em] w-[2px] align-middle"
+                className="ml-0.5 inline-block h-[1.1em] w-0.5 align-middle"
                 style={{
                   backgroundColor: '#fff',
                   animation: 'blink 1s step-end infinite',
@@ -509,7 +509,7 @@ function App() {
         </button>
       </div>
 
-      <div className="rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
+      <div className="rounded-4xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
         <p className="text-sm uppercase tracking-[0.25em] text-white/50">
           What we build
         </p>
@@ -631,7 +631,7 @@ function App() {
         </p>
       </div>
 
-      <div className="rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
+      <div className="rounded-4xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl">
         <div className="flex items-start justify-between">
           <div>
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">

@@ -157,7 +157,7 @@ function App() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-black text-white">
             {/* Navbar */}
-      <nav className="fixed inset-x-0 top-0 z-[60] flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5 bg-black/20 backdrop-blur-xl border-b border-white/10">
+      <nav className="fixed inset-x-0 top-0 z-60 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5 bg-black/20 backdrop-blur-xl border-b border-white/10">
         
         {/* Logo */}
 <div className="flex items-center gap-3">
@@ -165,7 +165,7 @@ function App() {
   {/* SA Logo */}
   <div className="flex h-16 w-16 items-center justify-center sm:h-16 sm:w-16">
     <img
-      src="/logo.png"
+      src="logo.png"
       alt="S&A Studio"
       className="h-full w-full object-contain mix-blend-screen transition-transform duration-300 hover:scale-105"
     />
@@ -193,28 +193,28 @@ function App() {
 
   <a
     href="#labs"
-    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
+    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
   >
     Labs
   </a>
 
   <a
     href="#studio"
-    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
+    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
   >
     Studio
   </a>
 
   <a
     href="#openings"
-    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
+    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
   >
     Openings
   </a>
 
   <a
     href="#shop"
-    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
+    className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-[18px] text-white backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-white/60 hover:bg-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
   >
     Shop
   </a>
@@ -235,30 +235,30 @@ function App() {
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
-          className="relative z-[60] flex flex-col gap-[5px] md:hidden"
+          className="relative z-60 flex flex-col gap-1.25 md:hidden"
         >
           <span
-            className={`h-[2px] w-6 bg-white transition-transform duration-300 ${
-              menuOpen ? 'translate-y-[7px] rotate-45' : ''
+            className={`h-0.5 w-6 bg-white transition-transform duration-300 ${
+              menuOpen ? 'translate-y-1.75 rotate-45' : ''
             }`}
           />
 
           <span
-            className={`h-[2px] w-6 bg-white transition-opacity duration-300 ${
+            className={`h-0.5 w-6 bg-white transition-opacity duration-300 ${
               menuOpen ? 'opacity-0' : 'opacity-100'
             }`}
           />
 
           <span
-            className={`h-[2px] w-6 bg-white transition-transform duration-300 ${
-              menuOpen ? '-translate-y-[7px] -rotate-45' : ''
+            className={`h-0.5 w-6 bg-white transition-transform duration-300 ${
+              menuOpen ? '-translate-y-1.75 -rotate-45' : ''
             }`}
           />
         </button>
       </nav>
             {/* Mobile Navigation Overlay */}
 <div
-  className={`fixed inset-0 z-[50] flex flex-col items-center justify-center px-8
+  className={`fixed inset-0 z-50 flex flex-col items-center justify-center px-8
     bg-black/50 backdrop-blur-xl transition-all duration-500
     ${
       menuOpen
@@ -348,8 +348,8 @@ function App() {
       </video>
 
             {/* Hero Section */}
-      <section className="relative z-[1] flex h-screen items-center justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
-        <div className="relative z-10 max-w-xl mr-auto ml-[8vw] mb-[5vh] md:mb-[12vh]-translate-y-[8vh] md:translate-y-0">
+      <section className="relative z-10 flex h-screen items-center justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
+        <div className="relative z-20 max-w-xl mr-auto ml-[8vw] mb-[5vh] md:mb-[12vh] md:translate-y-[-8vh]">
 
           {/* Blurred A.R.I.A. Introduction */}
           
@@ -369,7 +369,7 @@ function App() {
 
             {!done && (
               <span
-                className="ml-[2px] inline-block h-[1.1em] w-[2px] align-middle"
+                className="ml-0.5 inline-block h-[1.1em] w-0.5 align-middle"
                 style={{
                   backgroundColor: '#fff',
                   animation: 'blink 1s step-end infinite',
@@ -391,7 +391,7 @@ function App() {
       behavior: 'smooth',
     })
   }
-  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full text-[18px] sm:text-[18px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap hover:bg-black hover:text-white transition-colors duration-200">
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer">
    
     Start a project →
   </button>
@@ -402,7 +402,7 @@ function App() {
       behavior: 'smooth',
     })
   }
-  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white"
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer"
 >
   Work with us →
 </button>
@@ -413,7 +413,7 @@ function App() {
       behavior: 'smooth',
     })
   }
-  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white"
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer"
 >
   Join the team →
 </button>
@@ -424,7 +424,7 @@ function App() {
       behavior: 'smooth',
     })
   }
-  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white"
+  className="inline-flex items-center justify-center bg-white text-black border border-black/10 rounded-full px-8 py-4 text-[18px] transition-all duration-300 hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer"
 >
   Explore S&A Studio →
 </button>
@@ -465,7 +465,7 @@ function App() {
 {/* Labs Section */}
 <section
   id="labs"
-  className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
+  className="relative z-10 min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
   {/* Background */}
   <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
@@ -495,7 +495,7 @@ function App() {
       {/* AI Systems */}
       <a
         href="#studio"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-x2 hover:border-white/40"
+        className="group rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl transition-all duration-500 hover:bg-white/20 hover:-translate-y-2 hover:border-white/40"
       >
         <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
           ✦
@@ -567,7 +567,7 @@ function App() {
     <div className="mt-10">
       <a
         href="#studio"
-        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-black"
       >
         Explore the Lab →
       </a>
@@ -580,7 +580,7 @@ function App() {
 {/* Studio Section */}
 <section
   id="studio"
-  className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
+  className="relative z-10 min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
   {/* Background */}
   <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px]" />
@@ -727,7 +727,7 @@ function App() {
 {/* Openings Section */}
 <section
   id="openings"
-  className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
+  className="relative z-10 min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
   {/* Background */}
   <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
@@ -865,7 +865,7 @@ function App() {
 
         <a
           href="mailto:hello@anudeepstudio.co?subject=Open Application"
-          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105 hover:translate-x-2"
+          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:bg-black hover:text-white hover:translate-x-2"
         >
           Send your profile →
         </a>
@@ -879,7 +879,7 @@ function App() {
 {/* Shop Section */}                                              
 <section
   id="shop"
-  className="relative min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
+  className="relative z-10 min-h-screen px-6 py-24 sm:px-10 md:px-16 flex items-center overflow-hidden"
 >
   {/* Background */}
   <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px]" />
@@ -979,7 +979,7 @@ function App() {
       {/* Product 3 */}
       <a
         href="mailto:hello@anudeepstudio.co?subject=Creative%20Tools%20Enquiry"
-        className="ggroup rounded-[2rem] border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
+        className="ggroup rounded-4xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
         <div className="mb-10 flex items-center justify-between">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl text-white">
@@ -1018,14 +1018,14 @@ function App() {
 
       <a
         href="mailto:hello@anudeepstudio.co?subject=S%A%20Studio%20Shop%20Enquiry"
-        className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-lg font-medium text-black transition-all duration-300 hover:scale-105"
+        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg font-medium text-white backdrop-blur-xl transition-all duration-300  hover:bg-white hover:text-black hover:translate-x-2"
       >
-        Ask about a product →
+        Enquire product →
       </a>
 
       <a
         href="#contact"
-        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black"
+        className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-lg text-white backdrop-blur-xl transition-all duration-300 hover:bg-white hover:text-black hover:translate-x-2"
       >
         Contact S&A Studio →
       </a>
@@ -1069,7 +1069,7 @@ function App() {
         href="mailto:hello@anudeepstudio.co?subject=Project%20Enquiry"
         className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
-        <div className="flex items-start justify-between">
+        <div className="flex items-start justify-center">
           <div>
             <p className="text-sm uppercase tracking-[0.2em] text-white/40">
               Email
@@ -1095,7 +1095,7 @@ function App() {
         href="mailto:hello@anudeepstudio.co?subject=Start%20a%20Project"
         className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
       >
-        <div className="flex items-start justify-between">
+        <div className="flex items-start justify-center">
           <div>
             <p className="text-sm uppercase tracking-[0.2em] text-white/40">
               New project
@@ -1122,7 +1122,7 @@ function App() {
     <div className="mt-10">
       <a
         href="mailto:hello@anudeepstudio.co?subject=Hello%20S%26A%20Studio"
-        className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-medium text-black transition-all duration-300 hover:scale-105"
+        className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-medium text-black transition-all duration-300 hover:bg-black hover:text-white hover:translate-x-2"
       >
         Say hello →
       </a>
