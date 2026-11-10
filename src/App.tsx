@@ -157,7 +157,7 @@ function App() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-black text-white">
             {/* Navbar */}
-      <nav className="fixed inset-x-0 top-0 z-60 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5 bg-black/20 backdrop-blur-xl border-b border-white/10">
+      <nav className="fixed inset-x-0 top-0 z-60 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5 bg-black/40 backdrop-blur-xl border-b border-white/10">
         
         {/* Logo */}
 <div className="flex items-center gap-3">
@@ -348,8 +348,8 @@ function App() {
       </video>
 
             {/* Hero Section */}
-      <section className="relative z-10 flex h-screen items-center justify-end overflow-hidden px-5 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
-        <div className="relative z-20 max-w-xl mr-auto ml-[8vw] mb-[5vh] md:mb-[12vh] md:translate-y-[-8vh]">
+      <section className="relative z-10 flex h-screen items-center justify-end overflow-hidden px-5 pt-28 pb-12 sm:px-8 md:items-center md:justify-center md:pb-0">
+        <div className="relative z-20 mr-auto ml-[8vw] max-w-xl mb-[5vh] md:mb-[12vh] md:translate-y-[-8vh]">
 
           {/* Blurred A.R.I.A. Introduction */}
           
@@ -1061,62 +1061,60 @@ function App() {
       </p>
     </div>
 
-    {/* Contact Cards */}
-    <div className="grid gap-5 md:grid-cols-2">
+    
+{/* Contact Cards */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-      {/* Email */}
-      <a
-        href="mailto:hello@anudeepstudio.co?subject=Project%20Enquiry"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
-      >
-        <div className="flex items-start justify-center">
-          <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-              Email
-            </p>
+  {/* Email Card */}
+  <a
+    href="mailto:hello@anudeepstudio.co?subject=Project%20Enquiry"
+    className="group flex min-h-55 items-center justify-between gap-4 rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-white/40 hover:bg-white/20"
+  >
+    <div className="min-w-0 flex-1">
+      <p className="text-sm font-medium uppercase tracking-[0.2em] text-white/50">
+        Email
+      </p>
 
-            <h3 className="mt-4 text-2xl sm:text-3xl text-white">
-              hello@anudeepstudio.co
-            </h3>
+      <h3 className="mt-5 wrap-break-word text-xl sm:text-2xl lg:text-3xl font-medium leading-tight tracking-tight text-white">
+        hello@anudeepstudio.co
+      </h3>
 
-            <p className="mt-3 text-white/60">
-              Tell us about your idea, project or collaboration.
-            </p>
-          </div>
-
-          <span className="text-xl text-white/40 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
-            →
-          </span>
-        </div>
-      </a>
-
-      {/* Start a Project */}
-      <a
-        href="mailto:hello@anudeepstudio.co?subject=Start%20a%20Project"
-        className="group rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:translate-x-2 hover:border-white/40 hover:bg-white/20"
-      >
-        <div className="flex items-start justify-center">
-          <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-              New project
-            </p>
-
-            <h3 className="mt-4 text-2xl sm:text-3xl text-white">
-              Start a project
-            </h3>
-
-            <p className="mt-3 text-white/60">
-              Let's turn an ambitious idea into something real.
-            </p>
-          </div>
-
-          <span className="text-xl text-white/40 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
-            →
-          </span>
-        </div>
-      </a>
-
+      <p className="mt-4 text-sm sm:text-base leading-relaxed text-white/60">
+        Tell us about your idea, project or collaboration.
+      </p>
     </div>
+
+    <span className="shrink-0 self-center text-xl text-white/50 transition-all duration-300 group-hover:translate-x-2 group-hover:text-white">
+      →
+    </span>
+  </a>
+
+  {/* Start a Project Card */}
+  <a
+    href="mailto:hello@anudeepstudio.co?subject=Start%20a%20Project"
+    className="group flex min-h-55 items-center justify-between gap-4 rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-white/40 hover:bg-white/20"
+  >
+    <div className="min-w-0 flex-1">
+      <p className="text-sm font-medium uppercase tracking-[0.2em] text-white/50">
+        New Project
+      </p>
+
+      <h3 className="mt-5 text-2xl sm:text-3xl font-medium leading-tight tracking-tight text-white">
+        Start a project
+      </h3>
+
+      <p className="mt-4 text-sm sm:text-base leading-relaxed text-white/60">
+        Let's turn an ambitious idea into something real.
+      </p>
+    </div>
+
+    <span className="shrink-0 self-center text-xl text-white/50 transition-all duration-300 group-hover:translate-x-2 group-hover:text-white">
+      →
+    </span>
+  </a>
+
+</div>
+
 
     {/* Main CTA */}
     <div className="mt-10">
